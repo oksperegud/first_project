@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 40%);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    z-index: 999;
+}
+
+header ul li {
+    padding: 10px 15px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+header ul li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1abc9c;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+header ul li:hover::after {
+    opacity: 1;
+}
+
+.mainblock {
+    text-align: center;
+    color: white;
+}
+
+.mainblock_header {
+    padding-top: 230px;
+    margin-bottom: 150px;
+}
+
+.mainblock_header h1 {
+    font-weight: 200;
+    font-size: 54px;
+}
+
+.mainblock_header h2 {
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.content {
+    background-image: url(img/bg1.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+}
+
+.icons {
+    display: flex;
+    color: white;
+    padding-bottom: 65px;
+    font-weight: 300;
+}
+
+.icons div {
+    width: 33.3333%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.icons div img {
+    margin-bottom: 40px;
+    transition: transform 800ms;
+}
+
+.icons div:hover img {
+    transform: translateY(-30px);
+}
+
+.secondblock {
+    background-color: #1abc9c;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.secondblock h1 {
+    font-weight: 200;
+    font-size: 45px;
+    text-align: center;
+    color: #e4e6e5;
+}
+
+.maintext h1::after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 5px;
+    background-color: #e4e6e5;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.text h2{
+    color: #e4e6e5;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 200;
+    padding: 25px;
+}
+
+.secondicons {
+    text-align: center;
+    font-size: 25px;
+    color: #e4e6e5;
+    display: flex;
+    padding: 60px;
+}
+
+.secondicons div {
+    width: 25%;
+    font-weight: 200;
+}
+
+.secondicons div:hover i {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.secondicons i {
+    font-size: 40px;
+}
+
+.secondicons h3 {
+    font-size: 28px;
+    font-weight: 200;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.secondicons p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.form {
+    background-color: #2F2F2F;
+    text-align: center;
+    color: #e4e6e5;
+    padding: 90px 0 50px;
+}
+
+.form h1 {
+    font-weight: 300;
+    font-size: 45px;
+}
+
+.form h2 {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.form h1::after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 5px;
+    background-color: #4e4e4e;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.container-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    z-index: 1;
+}
+
+.form-icons i {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+    transform: translateY(15px);
+    transition: transform .7s;
+}
+
+.form-icons p {
+    font-size: 20px;
+    transform: translateY(40px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .7s, opacity .7s;
+}
+
+.form-icons div:hover i {
+    transform: translateY(-15px);
+}
+
+.form-icons div:hover p {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+form {
+    padding: 0 80px;
+    margin-top: 80px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+form input:focus, form textarea:focus {
+    box-shadow: 0 0 8px rgba(102, 175, 233, 60%);
+    border-color: #66afe9;
+}
+
+form textarea {
+    resize: none;
+}
+
+form p {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #1abc9c;
+    color:white;
+    width: auto;
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #13dfb7;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+}
+#menu-check {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .mobile-menu-button {
+        display: none;
+    }
+
+    header .container {
+        position: relative;
+        height: 50px;
+    }
+
+    header .container ul {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    header .container ul li a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    header .container ul li a::after,
+    header .container ul li a::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: white;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    header .container ul li a::after {
+        bottom: -5px;
+        left: 0;
+    }
+
+    header .container ul li a::before {
+        top: -5px;
+        left: 0;
+    }
+
+    header .container ul li a:hover::after,
+    header .container ul li a:hover::before {
+        opacity: 1;
+    }
+
+    .menu-burger {
+        display: none;
+    }
+
+    #menu-check {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    html, body {width:100%; overflow-x:hidden}
+    .mainblock {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .icons div {
+        font-size: 100%;
+    }
+    .maintext {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .maintext h1::after {
+        content: '';
+        display: block;
+        width: 80%;
+        height: 5px;
+        background-color: #e4e6e5;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .form h1::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #4e4e4e;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .secondicons {
+        flex-direction: column;
+    }
+    .secondicons div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    header ul {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        padding-top: 40px;
+    }
+    .mobile-menu-button {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .mobile-menu-button div {
+        width: 20px;
+        height: 3px;
+        background: white;
+        margin-bottom: 5px;
+    }
+    .form-icons {
+        flex-direction: column;
+    }
+    form {
+        margin: 0 -25%;
+    }
+    .form-icons div {
+        margin-bottom: 30px;
+    }
+    .form-icons div i {
+        transform: translateY(-15px);
+    }
+    .form-icons div p {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    #menu-check:checked ~ ul {
+        left: 0;
+    }
+    label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(0, -50%);
+        display: block;
+        margin-top: 13px;
+    }
+    label div {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 5px;
+        background: white;
+    }
+    header .container ul {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        transition: left .7s;
+        z-index: -1;
+    }
+    header .container ul li {
+        margin-bottom: 20px;
+    }
+    header .container ul li a {
+        font-size: 25px;
+    }
+    header .menu ul li a::after,
+    header .menu ul li a::before {
+        display: none;
+    }
+}
